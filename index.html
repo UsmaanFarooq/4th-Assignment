@@ -15,152 +15,115 @@
 
 <body>
     <main id="selection-section">
-    <!--Header and Menu Section-->
-    <header class="container">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a class="active" href="#">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!--Header and Menu Section-->
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!--Booking Section-->
-    <main class="main-content container">
+        <!--Booking Section-->
+        <main class="main-content container">
 
-        <div class="booking-content">
-            <h1>Cruise Queen</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book./p>
-        </div>
-
-
-        <div class="booking-form">
-            <h3>Book Ocean Time</h3>
-            <div class="input-group">
-                <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
+            <div class="booking-content">
+                <h1>Cruise Queen</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book./p>
             </div>
-            <div class="input-group">
-                <label for="">Flying To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
-            </div>
-            <div class="inputs">
+
+
+            <div class="booking-form">
+                <h3>Book Ocean Time</h3>
                 <div class="input-group">
-                    <label" for="">Departure</label>
+                    <label for="">Flying From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
+                </div>
+                <div class="input-group">
+                    <label for="">Flying To</label>
+                    <input class="inp-style" type="text" name="" placeholder="New York, United States">
+                </div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                            <input class="inp-style" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Return</label>
                         <input class="inp-style" type="date" name="">
-                </div>
-                <div class="input-group">
-                    <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
-                </div>
-            </div>
-            <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <input id="firstClassTicket-count" class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div>
-                    <button onclick="ticketChange('firstClassTicket', true)" class="plus-minus-btn">+</button>
-                    <button onclick="ticketChange('firstClassTicket', false)" class="plus-minus-btn">-</button>
-                </div>
-            </div>
-
-            <div class="input-group f-class">
-                <div>
-                    <label for="">Economy ($100)</label>
-                    <input id="economyTicket-count" class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div>
-                    <button onclick="ticketChange('economyTicket', true)" class="plus-minus-btn">+</button>
-                    <button onclick="ticketChange('economyTicket', false)" class="plus-minus-btn">-</button>
-                </div>
-            </div>
-            <div class="calculations">
-                <div class="amount">
-                    <div class="left">
-                        <p>Subtotal</p>
                     </div>
-                    <div class="right">
-                        <p>$<span id="sub-total">00</span></p>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <input id="firstClassTicket-count" class="inp-style inp-width" type="number" name="" value="0">
+                    </div>
+                    <div>
+                        <button onclick="ticketChange('firstClassTicket', true)" class="plus-minus-btn">+</button>
+                        <button onclick="ticketChange('firstClassTicket', false)" class="plus-minus-btn">-</button>
                     </div>
                 </div>
 
-                <div class="amount">
-                    <div class="left">
-                        <p>Charge 10% VAT</p>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <input id="economyTicket-count" class="inp-style inp-width" type="number" name="" value="0">
                     </div>
-                    <div class="right">
-                        <p>$<span id="tax-amount">00</span></p>
-                    </div>
-                </div>
-                <hr>
-                <div class="amount">
-                    <div class="left">
-                        <h4>Total</h4>
-                    </div>
-                    <div class="right">
-                        <p>$<span id="total-amount">00</span></p>
+                    <div>
+                        <button onclick="ticketChange('economyTicket', true)" class="plus-minus-btn">+</button>
+                        <button onclick="ticketChange('economyTicket', false)" class="plus-minus-btn">-</button>
                     </div>
                 </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="sub-total">00</span></p>
+                        </div>
+                    </div>
+
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="tax-amount">00</span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="total-amount">00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button id="bookNow-btn" class="btn-style">Book Now</button>
             </div>
-            <button id="bookNow-btn" class="btn-style">Book Now</button>
-        </div>
+        </main>
     </main>
-</main>
-   <main id="receipt-area">
-  <div id="receipt">
-    <h1> CRUISE QUEEN </h1>
-    <h2>Booking has been successful</h2> <br> <h3>"We hope you will enjoy your journey in CRUISE QUEEN."</h3>
-    </h3>
-  </div>
-  <div id="about-us">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam unde velit perferendis doloribus quos aliquid nam, placeat nihil ab explicabo earum a adipisci fugit? Amet fuga dignissimos placeat similique molestias numquam, sed excepturi exercitationem, aliquid modi pariatur dolore recusandae, iusto facere quas eius quibusdam aliquam laborum? Adipisci, veritatis id? Autem commodi voluptatum nobis beatae nisi, iure soluta eius et minus quos dicta similique velit in ratione unde maiores consectetur nam esse nemo error? Quia voluptatem ea repudiandae unde veniam dignissimos similique in totam distinctio delectus ratione fugiat ut placeat tempore quos soluta et, quibusdam id. Sapiente soluta ad, vitae consectetur et dolor adipisci possimus dolorem aut id nisi fuga nostrum consequuntur dolores. Asperiores aut quis error repudiandae officia aliquid quisquam in, labore culpa saepe voluptas suscipit debitis quibusdam temporibus blanditiis nisi totam. Expedita ullam architecto ipsa quisquam, pariatur hic placeat esse animi nisi tempore aliquam ut dolorem eaque. Reprehenderit quis consequuntur natus reiciendis debitis quisquam explicabo distinctio accusamus ullam neque libero voluptatum veritatis, maiores iusto magnam nemo dicta? Id quis nulla sit eveniet corporis, labore iure explicabo quod porro rem dicta ipsum voluptatem nihil aperiam sint saepe odio numquam reiciendis tempore fuga mollitia. Vitae beatae tenetur et quisquam nulla tempore nobis, cum libero, consequatur veniam distinctio unde deleniti hic facilis dicta aliquam numquam. Temporibus inventore ab itaque cum suscipit ex, architecto perspiciatis atque error repellendus voluptates vero autem laboriosam illo explicabo fugiat ipsum obcaecati labore? Autem repellat delectus ex earum aspernatur ut nulla sed natus alias corrupti! Doloribus eaque atque quos voluptates aut ea doloremque saepe et fuga recusandae minus quas magni, voluptatum id rem tempore provident amet praesentium debitis? Libero recusandae veritatis laudantium alias quia veniam, voluptatibus ducimus asperiores, deleniti vitae cum quos! Porro quidem inventore sunt culpa reprehenderit cumque earum impedit perferendis sapiente! Consequuntur accusantium nam reiciendis.</p>
-  </div>
-   </main>
-    
-
-    <!--Thank You-->
-    <script>
-    //ticket-count.......................
-        function ticketChange(ticket, isIncrease) {
-            ticketInput = document.getElementById
-                (ticket + '-count');
-            ticketCount = parseInt(ticketInput.value);
-            let ticketNewCount = ticketCount;
-            if (isIncrease == true) {
-                ticketNewCount = ticketCount + 1;
-            }
-            if (isIncrease == false && ticketCount > 0) {
-                ticketNewCount = ticketCount - 1
-            }
-          ticketInput.value = ticketNewCount;
-           ticketCost();
-            }
-    //ticket-cost.........................
- function ticketCost(){
-    const firstClassTicketInput = document.getElementById('firstClassTicket-count');
-     const firstClassTicketCount = parseInt(firstClassTicketInput.value);
-     const economyTicketInput = document.getElementById('economyTicket-count');
-     const economyTicketCount = parseInt(economyTicketInput.value);
-     const totalTicketCost = firstClassTicketCount * 150 + economyTicketCount * 100;
-     document.getElementById('sub-total').innerText = totalTicketCost;
-     const tax = Math.round(totalTicketCost / 10);
-     document.getElementById('tax-amount').innerText = tax;
-     const total = totalTicketCost + tax;
-     document.getElementById('total-amount').innerText = total;
-}
- const bookNowBtn = document.getElementById('bookNow-btn').addEventListener('click', function(){
-     alert('Confirm')
-     const selectionSection = document.getElementById('selection-section');
-     selectionSection.style.display = 'none'
-     const receiptArea = document.getElementById('receipt-area');
-     receiptArea.style.display = 'block';
-
- })
-    </script>
+    <main id="receipt-area">
+        <div id="receipt">
+            <h1> Congratulations! </h1>
+            <h2>Your ticket has been booked</h2> <br>
+            <h4>Please check you email for further information</h4>
+            <br>
+            <h3>"We hope you will enjoy your journey in CRUISE QUEEN."</h3>
+            
+        </div>                              
+    </main>
+    <!--Thank You--> 
+<script src="script.js"></script>
 </body>
+
 </html>
