@@ -125,3 +125,31 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+#receipt-area{                  
+    display: none;
+}
+#receipt{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 350px;
+    font-weight: 400;
+}
+#receipt h2{
+    color:yellowgreen;
+
+}
+#receipt h1{
+    color: thistle;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+}
+#about-us{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+

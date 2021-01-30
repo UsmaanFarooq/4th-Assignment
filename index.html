@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <main id="selection-section">
     <!--Header and Menu Section-->
     <header class="container">
         <nav>
@@ -106,9 +107,21 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="bookNow-btn" class="btn-style">Book Now</button>
         </div>
     </main>
+</main>
+   <main id="receipt-area">
+  <div id="receipt">
+    <h1> CRUISE QUEEN </h1>
+    <h2>Booking has been successful</h2> <br> <h3>"We hope you will enjoy your journey in CRUISE QUEEN."</h3>
+    </h3>
+  </div>
+  <div id="about-us">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam unde velit perferendis doloribus quos aliquid nam, placeat nihil ab explicabo earum a adipisci fugit? Amet fuga dignissimos placeat similique molestias numquam, sed excepturi exercitationem, aliquid modi pariatur dolore recusandae, iusto facere quas eius quibusdam aliquam laborum? Adipisci, veritatis id? Autem commodi voluptatum nobis beatae nisi, iure soluta eius et minus quos dicta similique velit in ratione unde maiores consectetur nam esse nemo error? Quia voluptatem ea repudiandae unde veniam dignissimos similique in totam distinctio delectus ratione fugiat ut placeat tempore quos soluta et, quibusdam id. Sapiente soluta ad, vitae consectetur et dolor adipisci possimus dolorem aut id nisi fuga nostrum consequuntur dolores. Asperiores aut quis error repudiandae officia aliquid quisquam in, labore culpa saepe voluptas suscipit debitis quibusdam temporibus blanditiis nisi totam. Expedita ullam architecto ipsa quisquam, pariatur hic placeat esse animi nisi tempore aliquam ut dolorem eaque. Reprehenderit quis consequuntur natus reiciendis debitis quisquam explicabo distinctio accusamus ullam neque libero voluptatum veritatis, maiores iusto magnam nemo dicta? Id quis nulla sit eveniet corporis, labore iure explicabo quod porro rem dicta ipsum voluptatem nihil aperiam sint saepe odio numquam reiciendis tempore fuga mollitia. Vitae beatae tenetur et quisquam nulla tempore nobis, cum libero, consequatur veniam distinctio unde deleniti hic facilis dicta aliquam numquam. Temporibus inventore ab itaque cum suscipit ex, architecto perspiciatis atque error repellendus voluptates vero autem laboriosam illo explicabo fugiat ipsum obcaecati labore? Autem repellat delectus ex earum aspernatur ut nulla sed natus alias corrupti! Doloribus eaque atque quos voluptates aut ea doloremque saepe et fuga recusandae minus quas magni, voluptatum id rem tempore provident amet praesentium debitis? Libero recusandae veritatis laudantium alias quia veniam, voluptatibus ducimus asperiores, deleniti vitae cum quos! Porro quidem inventore sunt culpa reprehenderit cumque earum impedit perferendis sapiente! Consequuntur accusantium nam reiciendis.</p>
+  </div>
+   </main>
+    
 
     <!--Thank You-->
     <script>
@@ -140,7 +153,14 @@
      const total = totalTicketCost + tax;
      document.getElementById('total-amount').innerText = total;
 }
+ const bookNowBtn = document.getElementById('bookNow-btn').addEventListener('click', function(){
+     alert('Confirm')
+     const selectionSection = document.getElementById('selection-section');
+     selectionSection.style.display = 'none'
+     const receiptArea = document.getElementById('receipt-area');
+     receiptArea.style.display = 'block';
+
+ })
     </script>
 </body>
-
 </html>
